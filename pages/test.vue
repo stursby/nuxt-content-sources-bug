@@ -1,5 +1,5 @@
 <template>
   <div>
-    <ContentDoc path="/hello" />
+    <ContentDoc path="snippets/hello" />
   </div>
 </template>

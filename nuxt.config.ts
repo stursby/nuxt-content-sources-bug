@@ -9,10 +9,10 @@ export default defineNuxtConfig({
 
     // ...doesn't work either
     sources: [
-      "snippets",
       {
         name: "snippets",
         driver: "fs",
+        prefix: "/snippets",
         base: resolve(__dirname, "snippets"), // Path for source directory
       },
     ],
