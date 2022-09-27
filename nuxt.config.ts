@@ -4,16 +4,12 @@ import { resolve } from "path";
 export default defineNuxtConfig({
   modules: ["@nuxt/content"],
   content: {
-    // Array w/ String doesn't work
-    // sources: ["snippets"],
-
-    // ...doesn't work either
     sources: [
       {
         name: "snippets",
         driver: "fs",
         prefix: "/snippets",
-        base: resolve(__dirname, "snippets"), // Path for source directory
+        base: resolve(__dirname, "snippets"),
       },
     ],
   },
